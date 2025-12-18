@@ -11,17 +11,18 @@ a {
 }
 
 header {
-    margin: 0;
     padding: 15px 0;
     border-bottom: 10px solid red;
     height: 60px;
     line-height: 60px;
+    display: block;
 }
 
 .Headerlinks {
-    float: right;
+    display:none;
     font-size: 1.2em;
 }
+
 
 header a:first-child {
     float: left;
@@ -38,4 +39,17 @@ header > a > img {
 
 .currentPage {
     text-decoration: underline;
+}
+
+
+
+@media (min-width: 800px) {
+    .Headerlinks {
+        float: right;
+        font-size: 1.2em;
+    }
+
+    .Headerlinks {
+        display: inline-block;
+    }
 }
