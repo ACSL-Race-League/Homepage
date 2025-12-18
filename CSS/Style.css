@@ -5,11 +5,28 @@ body {
     font-size: 1.2em;
     background-color: white;
     min-height: 100vh;
+
 }
 header {
     margin: 0;
     padding: 15px 0;
-    background-color: #FF6B6B ;
+    border-bottom: 10px solid red;
+    height: 60px;
+    line-height: 60px;
+}
+
+.Headerlinks {
+    float: right;
+}
+
+header a:first-child {
+    float: left;
+}
+
+header a {
+    margin: auto 15px;
+    text-decoration: none;
+    color: red;
 }
 
 header > a > img {
