@@ -22,6 +22,11 @@ main picture > img {
     max-width: 300px;
 }
 
+.ACSL {
+    width:90%;
+    margin-top: 50px;
+}
+
 article h1 {
     text-align: center;
     color: red;
@@ -52,6 +57,7 @@ article {
 
     main picture {
         flex-direction: row;
+        min-height: 35vh;
     }
 
     main picture > img {
@@ -71,4 +77,7 @@ article {
         margin-left: 11%;
     }
 
+    .ACSL {
+        width: 60%;
+    }
 }

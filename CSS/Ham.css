@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     transition: .3s ease;
     display: flex;
     visibility: hidden;
@@ -18,7 +18,7 @@
 }
 
 .offscreen a {
-    margin: 50px auto;
+    margin: 20px auto;
 }
 
 .offscreen.active {

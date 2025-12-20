@@ -1,0 +1,9 @@
+main {
+    background-image: url("../../../../Images/MX5.png");
+    width: 100%;
+    min-height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}

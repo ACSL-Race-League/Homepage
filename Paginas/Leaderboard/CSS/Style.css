@@ -1,0 +1,81 @@
+body {
+    overflow: hidden;
+}
+
+.Season7 {
+    background-color: #191919;
+    border-bottom: 10px solid red;
+    min-height: 10%;
+}
+
+.Season7 img {
+    width: 60%;
+    padding: 10px 0;
+}
+
+main  div {
+    background-color: white;
+    display: flex;
+    border-bottom: black 5px solid;
+    padding:0;
+}
+
+main div div {
+    border: none;
+}
+
+.klasse {
+    display: flex;
+    justify-content: space-between;
+}
+
+main div a {
+    color: black;
+    margin: 20px 20px 20px 0;
+}
+
+main a:first-child {
+    margin-left: 30px;
+}
+
+.klassement {
+    width: 100%;
+    display: block;
+    overflow: scroll;
+    border: none;
+}
+
+.klassement > div, .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row {
+    border: none;
+}
+
+.klassement p {
+margin: 10px;
+}
+
+.klassement ol {
+    height: 60vh;
+}
+
+
+@media (min-width: 800px) {
+    .Season7 img {
+        width: 40%;
+    }
+
+    .klassement {
+        width: 50%;
+        border-radius: 20px;
+        margin: 3% auto;
+        overflow-x: hidden;
+    }
+
+    .klassement ol {
+        height: 40vh;
+    }
+}
