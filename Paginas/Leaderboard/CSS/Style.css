@@ -63,7 +63,7 @@ margin: 10px;
 }
 
 
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
     .Season7 img {
         width: 40%;
     }
