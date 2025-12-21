@@ -14,7 +14,6 @@ body {
 }
 
 main  div {
-    background-color: white;
     display: flex;
     border-bottom: black 5px solid;
     padding:0;
@@ -43,9 +42,14 @@ main a:first-child {
 }
 
 h1 {
+    display: block;
     text-align: center;
     margin: 0 auto;
+    padding: 20px 0;
+    width: 100%;
+    color: black;
     border-bottom: black 5px solid;
+    background-color: white;
 }
 
 .team {
@@ -80,6 +84,11 @@ h1 {
     font-weight: normal;
 }
 
+.background {
+    display: flex;
+    flex-direction: column;
+}
+
 @media screen and (min-width: 800px) {
     .Season7 img {
         width: 40%;
@@ -100,13 +109,15 @@ h1 {
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
-        height: calc(100vh - 350px);
+        height: calc(100vh - 360px);
+        background-color: rgba(255, 255, 255, 0);
     }
 
     .team {
         border-radius: 20px;
         width: 25%;
         margin: 15px 20px;
+        background-color: rgba(255, 255, 255, 0.8);
     }
 
     .team img {
@@ -114,4 +125,9 @@ h1 {
     }
 
 
+
+    h1 {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-bottom: black 2px solid;
+    }
 }

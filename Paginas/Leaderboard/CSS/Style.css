@@ -13,11 +13,10 @@ body {
     padding: 10px 0;
 }
 
-main  div {
-    background-color: white;
+main div {
     display: flex;
     border-bottom: black 5px solid;
-    padding:0;
+    padding: 0;
 }
 
 main div div {
@@ -25,13 +24,14 @@ main div div {
 }
 
 .klasse {
+    background-color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 main div a {
     color: black;
-    margin: 20px 10px 20px 0;
+    margin: 20px 5px 20px 0;
 }
 
 main a:first-child {
@@ -43,6 +43,7 @@ main a:first-child {
     display: block;
     overflow-y: scroll;
     border: none;
+    background-color: white;
 }
 
 .klassement > div, .row {
@@ -55,7 +56,7 @@ main a:first-child {
 }
 
 .klassement p {
-margin: 10px;
+    margin: 10px;
 }
 
 .klassement ol {
@@ -64,6 +65,14 @@ margin: 10px;
 
 
 @media screen and (min-width: 800px) {
+    .klasse {
+        justify-content: space-between;
+    }
+
+    main .klasse a {
+        margin: 20px 20px 20px 0;
+    }
+
     .Season7 img {
         width: 40%;
     }
@@ -86,5 +95,9 @@ margin: 10px;
 
     main a:first-child {
         margin-left: 30px;
+    }
+
+    .klassement {
+        background-color: rgba(255, 255, 255, 0.8);
     }
 }

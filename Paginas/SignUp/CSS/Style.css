@@ -1,0 +1,44 @@
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 70vh;
+    background-image: url("../../../Images/signupb.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+main img {
+    margin: 20px;
+    max-width: 90%;
+    border-radius: 20px;
+    box-shadow: -10px 0 15px -5px rgba(0, 0, 0, 0.3), 10px 0 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    height: auto;
+}
+
+.footer, .copyright {
+    background-color: lightgrey;
+}
+
+main div {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    main img {
+        margin: 20px;
+        max-width: 40%;
+        border-radius: 20px;
+        box-shadow: -10px 0 15px -5px rgba(0, 0, 0, 0.3), 10px 0 15px -5px rgba(0, 0, 0, 0.3);
+    }
+}
