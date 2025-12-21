@@ -2,29 +2,35 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="ACSL Race League – Official website for the ACSL sim racing championship in Assetto Corsa. View standings, race calendar, articles and league updates.">
-    <meta name="keywords" content="ACSL, Assetto Corsa, ACSL Race League, Race League, AC Race League, sim racing, league racing, motorsport">
+    <meta name="description"
+          content="ACSL Race League – Official website for the ACSL sim racing championship in Assetto Corsa. View standings, race calendar, articles and league updates.">
+    <meta name="keywords"
+          content="ACSL, Assetto Corsa, ACSL Race League, Race League, AC Race League, sim racing, league racing, motorsport">
     <meta name="author" content="ACSL Race League">
     <title>ACSL Race League – Official Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="CSS/Style.css">
     <link rel="stylesheet" href="CSS/Header.css">
     <link rel="stylesheet" href="CSS/Ham.css">
+    <link rel="stylesheet" href="CSS/Video.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
 
     <meta property="og:title" content="ACSL Race League – Official Website">
-    <meta property="og:description" content="Sim racing championship in Assetto Corsa. View standings, race calendar, special events and league updates.">
+    <meta property="og:description"
+          content="Sim racing championship in Assetto Corsa. View standings, race calendar, special events and league updates.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://acsl-race-league.github.io/Homepage/">
     <meta property="og:image" content="https://acsl-race-league.github.io/Homepage/Images/mainlogo_black_red.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ACSL Race League – Official Website">
-    <meta name="twitter:description" content="Sim racing championship in Assetto Corsa. View standings, race calendar, special events and league updates.">
+    <meta name="twitter:description"
+          content="Sim racing championship in Assetto Corsa. View standings, race calendar, special events and league updates.">
     <meta property="og:image" content="https://acsl-race-league.github.io/Homepage/Images/mainlogo_black_red.jpg">
 
 </head>
+<script src="https://www.youtube.com/iframe_api"></script>
 <body>
 <header>
     <a href="index.html"><img src="Images/mainlogo_black_red.png" alt="ACSL Logo"></a>
@@ -83,6 +89,15 @@
         </div>
     </div>
 </article>
+<div class="video">
+    <iframe id="acslVideo"
+            src="https://www.youtube.com/embed/cMffkhsKHyY?enablejsapi=1&controls=0&mute=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</div>
+<p class="unmute">Click the video and press M to unmute</p>
 <footer>
     <div class="footer">
         <div>
@@ -102,5 +117,25 @@
         &copy; ACSL RACE LEAGUE | <a href="about.html">About</a>
     </p>
 </footer>
+<script>
+    let player;
+
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('acslVideo');
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                player.playVideo();
+            } else {
+                player.pauseVideo();
+            }
+        });
+    }, {threshold: 0.5});
+
+    observer.observe(document.querySelector('.video'));
+</script>
+
 </body>
 </html>

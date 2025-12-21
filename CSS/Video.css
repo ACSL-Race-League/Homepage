@@ -1,0 +1,42 @@
+.video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 50%;               /* zet midden van iframe op midden container */
+    transform: translateX(-50%); /* schuif iframe terug zodat hij echt centreert */
+    width: 80%;
+    height: 80%;
+    border: 0;
+}
+
+.unmute {
+    margin-top: -180px;
+}
+
+article {
+    border-bottom: red solid 10px;
+    margin-bottom: 0;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+@media screen and (min-width: 800px) {
+    article {
+        margin-bottom: 50px;
+    }
+
+    footer{
+        margin-top: 0;
+    }
+
+}
+
+
