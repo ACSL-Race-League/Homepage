@@ -32,9 +32,13 @@ main a:first-child {
     margin-left: 10px;
 }
 
+.background{
+    background-image: url("../../../Images/Teamsb.jpg");
+    background-size: cover;
+}
+
 .Teams {
     border: none;
-    background-color: #fcfcfc;
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
@@ -52,14 +56,20 @@ h1 {
     background-color: white;
 }
 
+.team:first-child{
+    margin-top: 10px;
+}
+
 .team {
+    border-radius: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     height: auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
     box-shadow: -10px 0 15px -5px rgba(0, 0, 0, 0.3), 10px 0 15px -5px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .team img {
@@ -114,7 +124,6 @@ h1 {
     }
 
     .team {
-        border-radius: 20px;
         width: 25%;
         margin: 15px 20px;
         background-color: rgba(255, 255, 255, 0.8);

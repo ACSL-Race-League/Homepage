@@ -43,7 +43,9 @@ main a:first-child {
     display: block;
     overflow-y: scroll;
     border: none;
-    background-color: white;
+    background-image: url("../../../Images/standingsphone.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .klassement > div, .row {
@@ -99,5 +101,6 @@ main a:first-child {
 
     .klassement {
         background-color: rgba(255, 255, 255, 0.8);
+        background-image: none;
     }
 }

@@ -19,7 +19,7 @@ main picture {
 }
 
 main picture > img {
-    max-width: 350px;
+    max-width: 90%;
 }
 
 article {

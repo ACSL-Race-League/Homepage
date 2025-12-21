@@ -1,5 +1,7 @@
+@media screen and (min-width: 800px) {
+
 .background {
     background-image: url("../../../../Images/TeamsE.png");
     background-size: cover;
-
+}
 }

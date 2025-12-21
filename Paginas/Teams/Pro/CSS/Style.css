@@ -1,4 +1,6 @@
-.background {
-    background-image: url("../../../../Images/TeamsP.png");
-    background-size: cover;
+@media screen and (min-width: 800px) {
+    .background {
+        background-image: url("../../../../Images/TeamsP.png");
+        background-size: cover;
+    }
 }

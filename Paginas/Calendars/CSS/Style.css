@@ -1,16 +1,18 @@
-article:nth-child(2n+1) img, p h2 {;
-}
-
-article:nth-child(2n) img, p h2 {
-    float: right;
-}
-
 article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: black solid 2px;
+    border-radius: 20px;
+    border-bottom: grey solid 2px;
 }
+
+article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 p {
     text-align: justify;
@@ -27,9 +29,15 @@ header, article {
     margin-bottom: 10px;
 }
 
-img {
+article img {
     width: 95%;
     align-self: center;
+    border-radius: 20px;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
 }
 
 @media screen and (min-width: 800px) {
@@ -63,7 +71,6 @@ img {
         width: 25%;
         height: auto;
         object-fit: contain;
-        border-radius: 20px;
     }
 
     article div {
