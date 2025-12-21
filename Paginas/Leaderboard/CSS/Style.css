@@ -31,17 +31,17 @@ main div div {
 
 main div a {
     color: black;
-    margin: 20px 20px 20px 0;
+    margin: 20px 10px 20px 0;
 }
 
 main a:first-child {
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .klassement {
     width: 100%;
     display: block;
-    overflow: scroll;
+    overflow-y: scroll;
     border: none;
 }
 
@@ -77,5 +77,14 @@ margin: 10px;
 
     .klassement ol {
         height: 40vh;
+    }
+
+    main div a {
+        color: black;
+        margin: 20px 20px 20px 0;
+    }
+
+    main a:first-child {
+        margin-left: 30px;
     }
 }
