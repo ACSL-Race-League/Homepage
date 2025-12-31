@@ -45,6 +45,6 @@ article p {
     }
 
     article {
-        height: 10vh;
+        height: auto;
     }
 }
