@@ -139,8 +139,6 @@ h1 {
         max-width: 60%;
     }
 
-
-
     h1 {
         background-color: rgba(255, 255, 255, 0.9);
         border-bottom: black 2px solid;
@@ -148,5 +146,9 @@ h1 {
 
     .team:first-child{
         margin-top: auto;
+    }
+
+    .Teams .team:last-child {
+        margin-bottom: 15px;
     }
 }
