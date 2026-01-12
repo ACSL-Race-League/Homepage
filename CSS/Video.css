@@ -20,6 +20,9 @@ article {
     margin-bottom: 0;
 }
 
+#acslVideo {
+    border: none;
+}
 
 
 @media screen and (min-width: 800px) {

@@ -8,7 +8,7 @@ main {
     border-bottom: 10px solid red;
 }
 
-main picture {
+main figure {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -18,7 +18,7 @@ main picture {
     padding-top: 20px;
 }
 
-main picture > img {
+main figure > img {
     max-width: 300px;
 }
 
