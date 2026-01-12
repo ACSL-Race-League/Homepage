@@ -59,12 +59,12 @@ article {
         background-image: url("../Images/Homepage image.jpg");
     }
 
-    main picture {
+    main figure {
         flex-direction: row;
         min-height: 35vh;
     }
 
-    main picture > img {
+    main figure > img {
         max-width: 500px;
     }
 
