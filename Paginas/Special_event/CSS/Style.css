@@ -1,51 +1,99 @@
 main {
-    background-image: url("../../../Images/NurburgringGSM.jpg");
+    background-image: url("../../../Images/background.png");
     width: 100%;
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-bottom: 10px solid red;
-    border-top: 10px solid red;
+    padding-top: 15px;
 }
 
-main picture {
+
+.race {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh;
     flex-direction: column;
-    flex-wrap: wrap;
-    padding-top: 20px;
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto 50px auto;
 }
 
-main picture > img {
-    max-width: 90%;
+.race div {
+    border-top: 10px solid red;
+    width: 95%;
+    text-align: right;
 }
 
-article {
-    background-color: white;
-    display: block;
-    text-align: justify;
-    margin: 30px 10%;
+.race img {
+    width: 95%;
+    border-radius: 20px;
+}
+
+h2:first-child {
+    color: grey;
+}
+
+h2 span {
     font-weight: normal;
 }
 
-article p {
-    text-align: center;
-    width: 100%;
-    padding-bottom: 20px;
+.klasse {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-bottom: 5px solid black;
+}
+
+.klasse a {
+    color: black;
+    margin-bottom: 10px;
 }
 
 @media (min-width: 800px) {
-    main {
-        background-image: url("../../../Images/Nurburgring.png");
-    }
-    main picture > img {
-        max-width: 600px;
+
+    .klasse {
+        justify-content: flex-start;
+        flex-direction: row;
+        padding-left: 50px;
+        width: 15%;
     }
 
-    article {
-        height: auto;
+    main .klasse a {
+        margin: 20px 20px 20px 0;
+    }
+
+    .race:nth-child(odd) {
+        flex-direction: row;
+    }
+
+    .race:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .race div {
+        width: 600px;
+        padding: 0 30px;
+    }
+
+    .race img {
+        width: 800px;
+    }
+
+    .race:nth-child(odd) picture {
+        margin-left: 10px;
+    }
+
+    .race:nth-child(even) picture {
+        margin-right: 10px;
+    }
+
+    .race:nth-child(odd) div {
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    .race:nth-child(even) div {
+        text-align: left;
+        margin-left: 10px;
     }
 }
