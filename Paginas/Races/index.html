@@ -35,16 +35,16 @@
     <a href="../../index.html"><img src="../../Images/mainlogo_black_red.png" alt="ACSL Logo"></a>
     <div class="Headerlinks">
         <a href="../SignUp">Sign Up</a>
-        <a class="currentPage" href="index.html">Special Events</a>
-        <a href="../Calendars">Calendar</a>
+        <a class="currentPage" href="index.html">Races</a>
+        <a class="verborgen" href="../Calendars">Calendar</a>
         <a href="../Leaderboard/Rookie">Standings</a>
         <a href="../Teams/Rookie">Teams</a>
     </div>
 
     <div class="offscreen">
         <a href="../SignUp">Sign Up</a>
-        <a class="currentPage" href="index.html">Special Events</a>
-        <a href="../Calendars">Calendar</a>
+        <a class="currentPage" href="index.html">Races</a>
+        <a class="verborgen" href="../Calendars">Calendar</a>
         <a href="../Leaderboard/Rookie">Standings</a>
         <a href="../Teams/Rookie">Teams</a>
     </div>
@@ -60,10 +60,46 @@
 </header>
 <main>
     <div class="klasse">
-            <a class="currentPage" href="index.html">Upcoming Events</a>
-            <a href="passed_se.html">Passed Events</a>
+        <button onclick="showHideUpcomingEvents()">Upcoming</button>
+        <button onclick="showHidePassedEvents()">Passed</button>
+        <button onclick="showHideAllEvents()">All</button>
     </div>
-    <div class="race">
+    <div class="race passed">
+        <div>
+            <h1>Ford KA</h1>
+            <h2>Date: <span>17/01/2026</span></h2>
+            <h2>Format</h2>
+            <p>5min Qualifying <br>Solo Race - 50min <br>Rolling Start, 1 pit</p>
+            <a href="https://de4.assettohosting.com:50366/results/2026_1_17_21_8_RACE">Results</a>
+        </div>
+        <picture>
+            <img src="../../Images/races/ka.png" alt="Ford Ka Race">
+        </picture>
+    </div>
+    <div class="race passed">
+        <div>
+            <h1>6 Hours Of Nordschleife</h1>
+            <h2>Date: <span>24/01/2026</span></h2>
+            <h2>Format</h2>
+            <p>20min Qualifying <br>Team Race - 6h <br>Rolling Start, 4 driver swaps</p>
+            <a href="https://de4.assettohosting.com:50366/results/2026_1_24_22_22_RACE">Results</a>
+        </div>
+        <picture>
+            <img src="../../Images/races/n6h.png" alt="Nordschleife Race">
+        </picture>
+    </div>
+    <div class="race passed">
+        <div>
+            <h1>ACSL License Test I</h1>
+            <h2>Date: <span>21/02/2026</span></h2>
+            <h2>Format</h2>
+            <p>45min Qualifying <br>Solo Race - 2x 5 laps <br>Rolling Start, no pit</p>
+        </div>
+        <picture>
+            <img src="../../Images/races/licensetest.png" alt="License Test">
+        </picture>
+    </div>
+    <div class="race upcoming">
         <div>
             <h1>RS Clio Cup</h1>
             <h2>Date: <span>07/02/2026</span></h2>
@@ -71,10 +107,10 @@
             <p>12min Qualifying <br>Solo Race - 2x 20min <br>Standing start, no pit</p>
         </div>
         <picture>
-            <img src="../../Images/special%20events/image.png" alt="Clio Cup">
+            <img src="../../Images/races/image.png" alt="Clio Cup">
         </picture>
     </div>
-    <div class="race">
+    <div class="race upcoming">
         <div>
             <h1>ACSL License Test II</h1>
             <h2>Date: <span>21/02/2026</span></h2>
@@ -82,10 +118,10 @@
             <p>Will be announced 1h before the event</p>
         </div>
         <picture>
-            <img src="../../Images/special%20events/licensetest.png" alt="License Test">
+            <img src="../../Images/races/licensetest.png" alt="License Test">
         </picture>
     </div>
-    <div class="race">
+    <div class="race upcoming">
         <div>
             <h1>Fuji Endurance</h1>
             <h2>Date: <span>28/02/2026</span></h2>
@@ -93,7 +129,7 @@
             <p>20min Qualifying <br>Team Race - 3h <br>Standing start, 2 pits</p>
         </div>
         <picture>
-            <img src="../../Images/special%20events/fuji.png" alt="Fuji Endurance">
+            <img src="../../Images/races/fuji.png" alt="Fuji Endurance">
         </picture>
     </div>
 </main>
@@ -116,5 +152,6 @@
         &copy; ACSL RACE LEAGUE - All Rights Reserved
     </p>
 </footer>
+<script src="scripts/script.js"></script>
 </body>
 </html>

@@ -3,8 +3,8 @@ main {
     width: 100%;
     min-height: 100vh;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-repeat: repeat;
+    background-position: top center;
     padding-top: 15px;
 }
 
@@ -44,7 +44,11 @@ h2 span {
     border-bottom: 5px solid black;
 }
 
-.klasse a {
+.klasse button {
+    border: none;
+    background: none;
+    font: inherit;
+    cursor: pointer;
     color: black;
     margin-bottom: 10px;
 }
