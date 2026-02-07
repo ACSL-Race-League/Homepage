@@ -1,9 +1,68 @@
 main {
     background-image: url("../../../Images/background.png");
     width: 100%;
-    min-height: 100vh;
+    min-height: auto;
     background-size: cover;
     background-repeat: repeat;
     background-position: top center;
     padding-top: 15px;
+}
+
+main h1 {
+    border-bottom: black 5px solid;
+    width: 60%;
+    margin: 0 auto 20px auto;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto 50px auto;
+}
+
+article p {
+    text-align: justify;
+}
+
+article img {
+    width: 95%;
+    border-radius: 20px;
+}
+
+article p span {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
+
+@media (min-width: 800px) {
+    main h1 {
+        width: 20%;
+    }
+
+    article {
+        flex-direction: row;
+    }
+
+    article img {
+        width: 800px;
+    }
+
+    article picture {
+        margin-left: 10px;
+    }
+
+    article p {
+        margin-right: 10px;
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+    }
+
+    article span {
+        margin-top: 20px;
+        text-align: right;
+    }
 }
