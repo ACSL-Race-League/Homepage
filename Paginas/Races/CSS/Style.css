@@ -17,7 +17,7 @@ main {
     margin: 0 auto 50px auto;
 }
 
-.race div {
+.race > div {
     border-top: 10px solid red;
     width: 95%;
     text-align: right;
@@ -53,6 +53,11 @@ h2 span {
     margin-bottom: 10px;
 }
 
+.results a {
+    display: block;
+    color: darkblue;
+}
+
 @media (min-width: 800px) {
 
     .klasse {
@@ -74,7 +79,7 @@ h2 span {
         flex-direction: row-reverse;
     }
 
-    .race div {
+    .race > div {
         width: 600px;
         padding: 0 30px;
     }
@@ -91,12 +96,12 @@ h2 span {
         margin-right: 10px;
     }
 
-    .race:nth-child(odd) div {
+    .race:nth-child(odd) > div {
         text-align: right;
         margin-right: 10px;
     }
 
-    .race:nth-child(even) div {
+    .race:nth-child(even) > div {
         text-align: left;
         margin-left: 10px;
     }
